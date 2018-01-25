@@ -1,0 +1,17 @@
+{
+  "name": "19.3",
+  "version": "1.0.0",
+  "description": "19.3",
+  "main": "actions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "19.3"
+  ],
+  "author": "Tomasz Pajor",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^3.2.1"
+  }
+}
