@@ -6,12 +6,11 @@ const EDIT_COMMENT = 'EDIT_COMMENT';
 const THUMB_UP_COMMENT = 'THUMB_UP_COMMENT';
 const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT';
 
-function addComment(text, user) {
+function addComment(text) {
     return {
         type: ADD_COMMENT,
         id: uuid.v4(),
-        text,
-        user
+        text
     }
 }
 
@@ -30,11 +29,11 @@ function editComment(id, text) {
     }
 }
 
-function thumbUpComment(id, upVotes) {
+function thumbUpComment(id, voteNum) {
     return {
         type: THUMB_UP_COMMENT,
         id,
-        thumbUps: upVotes + 1
+        votes: voteNum + 1
     }
 }
 
@@ -42,6 +41,6 @@ function thumbDownComment(id, downVotes) {
     return {
         type: THUMB_DOWN_COMMENT,
         id,
-        thumbDowns: downVotes + 1
+        votes: voteNum - 1
     }
 }
